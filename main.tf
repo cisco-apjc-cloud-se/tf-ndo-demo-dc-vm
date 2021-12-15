@@ -34,6 +34,7 @@ module "esxi" {
 
   tenant            = var.tenant
   domain            = var.domain
+  dns_server_list   = var.dns_server_list
 
   vsphere_dc        = var.vsphere_dc
   vsphere_cluster   = var.vsphere_cluster

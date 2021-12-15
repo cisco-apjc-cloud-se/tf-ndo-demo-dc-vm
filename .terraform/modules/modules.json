@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"esxi","Source":"./modules/esxi","Dir":""}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"esxi","Source":"./modules/esxi","Dir":"modules/esxi"}]}
