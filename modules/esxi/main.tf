@@ -117,7 +117,7 @@ resource "vsphere_virtual_machine" "vm" {
       }
 
       network_interface {
-        ipv4_address = cidrhost(each.value.ip_prefix, (each.value.ip_offset + each.value.instance_number))
+        ipv4_address = cidrhost(format("%s/%d",each.value.ip_prefix, each.value.ip_masklength), (each.value.ip_offset + each.value.instance_number))
         ipv4_netmask = each.value.ip_masklength
       }
       ipv4_gateway = each.value.ip_gateway
