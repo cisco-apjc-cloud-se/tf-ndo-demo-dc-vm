@@ -10,7 +10,7 @@ variable "dns_server_list" {
   type = list(string)
 }
 
-variable "vsphere_dc" {
+variable "vsphere_datacenter" {
   type = string
 }
 

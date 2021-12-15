@@ -36,10 +36,10 @@ module "esxi" {
   domain            = var.domain
   dns_server_list   = var.dns_server_list
 
-  vsphere_dc        = var.vsphere_dc
-  vsphere_cluster   = var.vsphere_cluster
-  vsphere_template  = var.vsphere_template
-  vsphere_datastore = var.vsphere_datastore
+  vsphere_datacenter  = var.vsphere_datacenter
+  vsphere_cluster     = var.vsphere_cluster
+  vsphere_template    = var.vsphere_template
+  vsphere_datastore   = var.vsphere_datastore
 
   dc_apps           = var.dc_apps
 }

@@ -51,7 +51,7 @@ locals {
 
 ### Common Data Sources ###
 data "vsphere_datacenter" "datacenter" {
-  name = var.vsphere_dc
+  name = var.vsphere_datacenter
 }
 
 data "vsphere_compute_cluster" "cluster" {
