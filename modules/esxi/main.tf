@@ -37,6 +37,10 @@ locals {
           instance_name   = vm.instance_name
           instance_count  = vm.instance_count # Total instances
           instance_number = i+1 # Specific instance number, starts at 0
+          ip_prefix       = vm.ip_prefix
+          ip_offset       = vm.ip_offset
+          ip_masklength   = vm.ip_masklength
+          ip_gateway      = vm.ip_gateway
         }
         // if site.type != "aci"
       ]
